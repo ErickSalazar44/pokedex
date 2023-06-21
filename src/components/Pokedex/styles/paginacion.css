@@ -1,0 +1,41 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5em auto 1em;
+    max-width: 800px;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgba(160, 160, 160, 0.2);
+    color: var(--white);
+    font-size: 0.9rem;
+    border-radius: 5px;
+    padding: 0.6em 2em;
+}
+
+.btn {
+    border: none;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(150, 72, 72, 0.5);
+    outline-offset: 0;
+    text-shadow: none;
+    transition: border 1.25s cubic-bezier(0.19, 1, 0.22, 1),
+        outline-color 1.25s cubic-bezier(0.19, 1, 0.22, 1),
+        outline-offset 1.25s cubic-bezier(0.19, 1, 0.22, 1),
+        text-shadow 1.25s cubic-bezier(0.19, 1, 0.22, 1),
+        box-shadow 1.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(252, 110, 110, 0);
+    outline-offset: 20px;
+    text-shadow: 1px 1px 4px rgb(255, 0, 0);
+}
+.numPagination {
+    font-size: 1.5rem;
+}
