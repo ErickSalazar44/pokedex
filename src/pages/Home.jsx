@@ -1,5 +1,4 @@
 import { useRef } from "react"
-
 import { useDispatch } from "react-redux"
 import { setTrainerNameG } from "../store/slices/trainerName.slice"
 import { useNavigate } from "react-router-dom"
