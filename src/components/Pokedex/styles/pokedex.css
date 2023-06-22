@@ -30,6 +30,12 @@
 .pokedex__from {
     margin: 4em 0 0;
 }
+.pokedex__select-contenedor {
+    display: flex;
+    width: 100%;
+    margin: 2em 0;
+    position: relative;
+}
 .pokedex__form-div {
     display: flex;
     width: 100%;
@@ -61,7 +67,6 @@
 }
 .pokedex__select {
     border-radius: 2em;
-    margin: 2em auto 0;
     height: 50px;
     border: none;
     appearance: none;
@@ -82,7 +87,7 @@
 }
 .select__icon-conteiner {
     position: absolute;
-    top: 55%;
+    top: 1em;
     right: 1em;
     z-index: -1;
 }
@@ -108,6 +113,9 @@
     .pokedex__form-div {
         max-width: 780px;
     }
+    .pokedex__select-contenedor {
+        max-width: 580px;
+    }
     .pokedex__input {
         max-width: 520px;
     }
@@ -125,7 +133,11 @@
     }
     .pokedex__from {
         max-width: 1550px;
-        margin: 4em auto;
+        margin: 4em auto 2em;
+    }
+    .pokedex__select-content {
+        margin: 0 auto 8em;
+        max-width: 1550px;
     }
     .pokeContainer {
         max-width: 1750px;

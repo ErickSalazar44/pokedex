@@ -105,19 +105,21 @@ const Pokedex = () => {
                 </div>
             </form>
                 <div className='pokedex__select-content'>
-                    <select
-                        className='pokedex__select'
-                        onChange={handleChangeType}
-                    >
-                        <option value={"all-pokemons"}>All pokemons</option>
-                        {types?.results.map((typeInf) => (
-                            <option key={typeInf.url} value={typeInf.url}>
-                                {typeInf.name}
-                            </option>
-                        ))}
-                    </select>
-                    <div className='select__icon-conteiner'>
-                        <i className=' select__icon bx bx-chevron-down'></i>
+                    <div className="pokedex__select-contenedor">
+                        <select
+                            className='pokedex__select'
+                            onChange={handleChangeType}
+                        >
+                            <option value={"all-pokemons"}>All pokemons</option>
+                            {types?.results.map((typeInf) => (
+                                <option key={typeInf.url} value={typeInf.url}>
+                                    {typeInf.name}
+                                </option>
+                            ))}
+                        </select>
+                        <div className='select__icon-conteiner'>
+                            <i className=' select__icon bx bx-chevron-down'></i>
+                        </div>
                     </div>
                 </div>
             <PokeContainer
