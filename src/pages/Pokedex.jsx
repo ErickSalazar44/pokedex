@@ -103,6 +103,7 @@ const Pokedex = () => {
                     />
                     <i className=' search bx bx-search-alt'></i>
                 </div>
+            </form>
                 <div className='pokedex__select-content'>
                     <select
                         className='pokedex__select'
@@ -119,7 +120,6 @@ const Pokedex = () => {
                         <i className=' select__icon bx bx-chevron-down'></i>
                     </div>
                 </div>
-            </form>
             <PokeContainer
                 currentItems={currentItems}
                 setCurrentPage={setCurrentPage}

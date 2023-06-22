@@ -28,7 +28,7 @@
     margin-top: 1em;
 }
 .pokedex__from {
-    margin: 4em 0;
+    margin: 4em 0 0;
 }
 .pokedex__form-div {
     display: flex;
@@ -78,6 +78,7 @@
 .pokedex__select-content {
     position: relative;
     z-index: 10;
+    margin-bottom: 4em;
 }
 .select__icon-conteiner {
     position: absolute;

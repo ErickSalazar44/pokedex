@@ -29,7 +29,7 @@ const Home = () => {
                 <h2 className="home__subtittle">Hi Trainer!</h2>
                 <p className="home__presentation">To start in this application please, give me your trainer name.</p>
                 <form className="home__form" onSubmit={handleSubmit}>
-                    <input placeholder="Name" className="home__input" ref={userName} type="text"/>
+                    <input minLength="3" placeholder="Name" className="home__input" ref={userName} type="text"/>
                     <button className="home__btn">Start</button>
                 </form>
                 <footer className="home__footer">
