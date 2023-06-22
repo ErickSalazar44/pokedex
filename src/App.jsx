@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Pokedex from './pages/Pokedex'
 import ProtectedRoutes from './pages/ProtectedRoutes'
 import PokedexName from './pages/PokedexName'
+
 // HOOKS
 
 

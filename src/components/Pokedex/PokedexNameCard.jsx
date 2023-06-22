@@ -2,7 +2,6 @@ import { useNavigate } from 'react-router-dom';
 import '../Pokedex/styles/pokedexNameCard.css'
 const PokedexNameCard = ({pokemon}) => {
     const navigate = useNavigate()
-
     const handleGoback = () => {
         navigate(`/pokedex`);
         window.scrollTo(0, 0)
@@ -19,11 +18,11 @@ const PokedexNameCard = ({pokemon}) => {
                 <img className='pokedex__pokeball-img pokeCard__img--bg' src="./pokeballBackground.svg" alt="pokeball" />
             </header>
             <figure className={`pokeCard__content-img`}>
-                <img
-                    className={`pokeCard__img bgCard-${pokemon?.types[0].type.name}`}
-                    src={pokemon?.sprites.other.home.front_default}
-                    alt={pokemon?.name}
-                />
+                    <img
+                        className={`pokeCard__img bgCard-${pokemon?.types[0].type.name}`}
+                        src={pokemon?.sprites.other.home.front_default}
+                        alt={pokemon?.name}
+                    />
             </figure>
             <div className='pokeCard__body'>
                 <h2 className='pokeCard__name'>{pokemon?.name}</h2>

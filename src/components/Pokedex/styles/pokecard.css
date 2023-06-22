@@ -9,11 +9,6 @@
     cursor: pointer;
     transition: perspective 0.5s, scale 0.5s, box-shadow 0.5s;
 }
-
-.pokecard:hover {
-    box-shadow: var(--color--psychic) 0px 7px 29px 0px;
-}
-
 .pokecard__header {
     aspect-ratio: 2;
     position: relative;

@@ -43,6 +43,7 @@
 .pokeCard__img {
     width: 300px;
 }
+
 .pokeCard__img--bg {
     top: 1.5em;
     width: 200px;
@@ -587,7 +588,7 @@
     }
     
     .pokeCard__footer, .pokeCard__stats, .pokeCard__body, .pokeCard__content-img, .pokeCard__header {
-        max-width: 1300px;
+        max-width: 1100px;
     }
     .pokeCard__header, .pokeCard__body, .pokeCard__footer {
         margin: 0 auto;

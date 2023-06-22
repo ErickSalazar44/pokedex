@@ -2,8 +2,8 @@
 
 :root {
 	--background-red: #D93F3F;
-    --background-black: #0C0C0C;
-    --white: white;
+	--background-black: #0C0C0C;
+	--white: white;
 
 	--filter--grass: drop-shadow(-4px -17px 40px #48bfab) drop-shadow(0 0 20px#1dffc685);
 	--background--grass: linear-gradient(25deg, rgb(10, 238, 60) 0%, rgba(80, 83, 79, 0.301) 100%);
@@ -158,6 +158,7 @@ body {
 	box-sizing: border-box;
 	background-color: #161616;
 	font-family: 'Mulish', sans-serif;
+	scroll-behavior: smooth;
 }
 
 h1,
@@ -185,4 +186,20 @@ button,
 select,
 input {
 	font-family: 'Titillium Web', sans-serif;
+}
+
+/* Barra de desplazamiento */
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+
+::-webkit-scrollbar-track {
+	background: #c2c2c2;
+}
+
+
+::-webkit-scrollbar-thumb {
+	background: #f56060;
+	border-radius: 10px;
 }
