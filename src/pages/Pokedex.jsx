@@ -85,7 +85,7 @@ const Pokedex = () => {
                 <figure>
                     <img
                         className='pokedex__pokeball-img'
-                        src='./pokeballBackground.svg'
+                        src='/pokeballBackground.svg'
                         alt='pokedex-gris'
                     />
                 </figure>

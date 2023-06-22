@@ -24,7 +24,7 @@ const Home = () => {
         <div className="home">
             <div className="home__card">
                 <h1 className="home__tittle">
-                    <img className="home__img" src="./pokedexTittle.svg" alt="tituloPokedex" />
+                    <img className="home__img" src="/pokedexTittle.svg" alt="tituloPokedex" />
                 </h1>
                 <h2 className="home__subtittle">Hi Trainer!</h2>
                 <p className="home__presentation">To start in this application please, give me your trainer name.</p>

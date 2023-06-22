@@ -12,7 +12,7 @@ export const DoesntExits = () => {
             <div className='modal__content'>
                 <header className="modal__header">
                     <figure className="modal__img-content">
-                        <img src="./imgError.webp" alt="imgError" />
+                        <img src="/imgError.webp" alt="imgError" />
                     </figure>
                     <h2 className="modal__header--tittle">Pokémon no encontrado</h2>
                 </header>
