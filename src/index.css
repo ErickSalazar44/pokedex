@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&family=Titillium+Web:wght@200;300;400;600&display=swap');
 
 :root {
+	font-family: 'Mulish', sans-serif;
 	--background-red: #D93F3F;
 	--background-black: #0C0C0C;
 	--white: white;

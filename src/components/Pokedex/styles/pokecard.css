@@ -97,7 +97,7 @@
 
 .pokeCard__btnBack {
     border: none;
-    background-color: #161616;
+    background: none;
     cursor: pointer;
 }
 
