@@ -16,7 +16,7 @@ function App() {
 
 
   return (
-    <div className={`content}`}>
+    <div className={`content`}>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route element={<ProtectedRoutes/>}>

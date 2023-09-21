@@ -8,10 +8,11 @@ import PokeContainer from "../components/Pokedex/PokeContainer"; // COMPONENTES
 // CSS
 import "../components/Pokedex/styles/pokedex.css";
 import "../components/Pokedex/styles/pokeContainer.css";
+import PokedexLoading from "../components/loading/PokedexLoading";
 const Pokedex = () => {
     // peticion api de los pokemones
     let url = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=800";
-    const [pokemons, getAllPokemons, , setPokemons] = useFetch(url);
+    const [pokemons, getAllPokemons, , setPokemons, loading] = useFetch(url);
 
     //estado para hacer paginacion empezando en 1
     const [currentPage, setCurrentPage] = useState(1);
@@ -32,21 +33,28 @@ const Pokedex = () => {
     // almacen de las url option
     const [selectValue, setSelectValue] = useState("all-pokemons");
 
+    // loader para cuando el usuario cambie el tipo de pokemon
+    const [loadertype, setLoadertype] = useState(false)
+
     useEffect(() => {
         if (selectValue === "all-pokemons") {
             getAllPokemons();
         } else {
+            setLoadertype(true)
             axios
                 .get(selectValue)
                 .then((res) => {
+                    console.log(res)
                     const data = {
                         results: res.data.pokemon.map(
                             (pokeInf) => pokeInf.pokemon
                         ),
                     };
+                    console.log(data)
                     setPokemons(data);
                 })
-                .catch((err) => console.log(err));
+                .catch((err) => console.log(err))
+                .finally(() => setLoadertype(false))
         }
     }, [selectValue]); // se ejecuta cada que cambia selec value
 
@@ -76,6 +84,11 @@ const Pokedex = () => {
         setSelectValue(e.target.value);
         setCurrentPage(1);
     };
+
+    // PANTALLA DE CARGA 
+    if (loading || loadertype) {
+        return (<PokedexLoading/>)
+    }
 
 
     return (

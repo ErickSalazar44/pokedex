@@ -58,6 +58,11 @@
     border-bottom-left-radius: 4px;
 }
 
+.home__input:focus {
+    outline: none;
+}
+
+
 .home__input::placeholder {
     font-size: 0.7rem;
     padding-left: 0.5em;
@@ -65,6 +70,7 @@
 }
 
 .home__btn {
+    cursor: pointer;
     border: none;
     background-color: var(--background-red);
     color: var(--white);
@@ -108,19 +114,13 @@
     outline-color: rgba(255, 255, 255, 0.5);
     outline-offset: 0px;
     text-shadow: none;
-    transition: border 1.25s cubic-bezier(0.19, 1, 0.22, 1),
-        outline-color 1.25s cubic-bezier(0.19, 1, 0.22, 1),
-        outline-offset 1.25s cubic-bezier(0.19, 1, 0.22, 1),
-        text-shadow 1.25s cubic-bezier(0.19, 1, 0.22, 1),
+    transition: text-shadow 1.25s cubic-bezier(0.19, 1, 0.22, 1),
         box-shadow 1.25s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .home__btn:hover {
-    border: 1px solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
         0 0 20px rgba(255, 255, 255, 0.2);
-    outline-color: rgba(255, 255, 255, 0);
-    outline-offset: 100px;
     text-shadow: 1px 1px 2px var(--background-red);
 }
 
